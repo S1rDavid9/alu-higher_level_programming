@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 
-import sys
 if __name__ == "__main__":
 
-    argv = sys.argv[1:]  # Get the arguments excluding the script name
+import sys
+   argv = sys.argv[1:]  # Get the arguments excluding the script name
     argc = len(argv)
 
     if argc == 0:
@@ -15,6 +15,3 @@ if __name__ == "__main__":
 
     for i, arg in enumerate(argv, start=1):
         print("{}: {}".format(i, arg))
-
-   
-
