@@ -1,4 +1,4 @@
 #!/usr/bin/python3
-print("".join("{}".format(chr(c)) 
-    for c in range(97, 123) 
-    if c not in (101, 113)), end="")
+for i in range(97, 123):
+    if i not in (101, 113):
+        print("{:c}" .format(i), end="")
