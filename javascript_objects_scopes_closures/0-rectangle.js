@@ -1,3 +1,7 @@
 #!/usr/bin/node
-class Rectangle {}
-    // This is an empty class that defines a rectangle
+// 0-rectangle.js
+class Rectangle {
+  // Empty class definition
+}
+
+module.exports = Rectangle;
