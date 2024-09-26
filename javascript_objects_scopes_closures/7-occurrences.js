@@ -1,7 +1,7 @@
 #!/usr/bin/node
 // 7-occurrences.js
 exports.nbOccurences = function (list, searchElement) {
-  let count = 0;  // Initialize the count to 0
+  let count = 0;
 
 // Loop through the list
   for (let i = 0; i < list.length; i++) {
@@ -11,5 +11,5 @@ exports.nbOccurences = function (list, searchElement) {
     }
   }
 
-  return count;  // Return the count of occurrences
+  return count;
 };
