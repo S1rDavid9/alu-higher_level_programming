@@ -1,21 +1,14 @@
 #!/usr/bin/node
 const fs = require('fs');
+
+// Get the file path and the string from the command line arguments
 const filePath = process.argv[2];
-const content = process.argv[3];
+const text = process.argv[3];
 
-// Check if both arguments (file path and content) are provided
-if (!filePath || !content) {
-  console.error('Usage: ./write_file.js <file_path> <string_to_write>');
-  process.exit(1);
-}
-
-// Write the string to the file using fs.writeFile
-fs.writeFile(filePath, content, 'utf-8', (err) => {
+// Write the string to the file
+fs.writeFile(filePath, text, 'utf-8', (err) => {
   if (err) {
-    // If an error occurs, log the error
-    console.error(err);
-    return;
+    console.log(err); // Print the error if one occurred
   }
-  console.log('File written successfully');
 });
 
