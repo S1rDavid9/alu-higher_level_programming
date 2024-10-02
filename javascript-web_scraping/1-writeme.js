@@ -11,4 +11,3 @@ fs.writeFile(filePath, text, 'utf-8', (err) => {
     console.log(err); // Print the error if one occurred
   }
 });
-
